@@ -3,6 +3,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import SocialSignIn from '../../Shared/SocialSignIn/SocialSignIn';
 import './Login.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -70,6 +71,7 @@ const Login = () => {
                 </Button>
                 <p className='my-3'>Don't have an account? <Link className='ms-2 text-decoration-none' to='/signup'>Sign Up now</Link></p>
             </Form>
+            <SocialSignIn from={from}></SocialSignIn>
             <ToastContainer></ToastContainer>
         </div>
     );
