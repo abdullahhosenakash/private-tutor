@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useCourses from '../../../hooks/useCourses';
-// import Cart from '../../Shared/Cart/Cart';
+import Cart from '../../Shared/Cart/Cart';
 import Course from '../Course/Course';
 import './Courses.css';
 
@@ -36,13 +36,13 @@ const Courses = () => {
                     }
                 </div>
                 <div>
-                    {/* {totalFees ? <Cart
+                    {totalFees ? <Cart
                         totalFees={totalFees}
                         addedCourses={addedCourses}
                     ></Cart>
                         :
                         ''
-                    } */}
+                    }
                 </div>
             </div>
         </div>
